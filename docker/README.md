@@ -9,19 +9,19 @@
 - redes
 - sistema de ficheiros
 
-**processos** - o processo com o pid 100 tem o container 1 em execução, todos os processos do container são sub-processos do processo pai com o pid 100
+**processos** - o processo com o pid 100 tem o container 1 em execução, todos os processos do container são subprocessos do processo pai com o pid 100
 
-**container** - é um processo isolado em execução com sub-processos que consegue "emular" um sistema operativo
+**container** - é um processo isolado em execução com subprocessos que consegue "simular" um sistema operativo
 
 <br>
 
 ---
 
 ## **cgroups**
-**cgroups** - controla recursos atribuidos ao container
+**cgroups** - controla recursos atribuídos ao container
 
 **cgroups consegue isolar:**
-- recuros disponiveis da máquina
+- recursos disponíveis da máquina
 - memoria
 - cpu
 - disco
@@ -42,7 +42,7 @@
 ---
 
 ## **imagens**
-**imagens** - são arvores de dependências. conjunto de dependencias dependências numa arvore. **imagens são imutáveis**
+**imagens** - são árvores de dependências. conjunto de dependências dependências numa árvore. **imagens são imutáveis**
 
 **nome das imagens:**
 - mysql:latest (latest)
@@ -72,7 +72,7 @@ EXPOSE: PORTA exposta para a máquina host
 **camadas de um container:**
 - **processo**
 - **imagem**
-- **camada de leitura e escrita** que permite entrar dentro do container e escrever. *atenção que não é dentro da imagem é dentro do container. quando o container é destruido todas as alterações feitas dentro do container são apagadas*
+- **camada de leitura e escrita** que permite entrar dentro do container e escrever. *atenção que não é dentro da imagem é dentro do container. quando o container é destruído todas as alterações feitas dentro do container são apagadas*
 
 
 
