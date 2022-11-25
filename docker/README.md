@@ -74,7 +74,38 @@ EXPOSE: PORTA exposta para a máquina host
 - **imagem**
 - **camada de leitura e escrita** que permite entrar dentro do container e escrever. *atenção que não é dentro da imagem é dentro do container. quando o container é destruído todas as alterações feitas dentro do container são apagadas*
 
+<br>
 
+---
 
+## **docker**
+**docker é composto por:**
+- docker client -> comunica com deamon api
+    - containers
+    - run, pull, push
+    - volumes
+    - network
+ - docker host
+    - cache -> comunica com register (pull - push)
+    - network
+    - volumes
 
+<br>
 
+---
+
+## **instalar**
+``` shell
+$ curl -fsSl https://get.docker.com | bash
+```
+<br>
+
+---
+
+## **comandos**
+``` shell
+$ docker ps
+$ docker ps -a
+
+$ docker run hello-world
+```
