@@ -75,7 +75,7 @@ EXPOSE: PORTA exposta para a máquina host
 - **camada de leitura e escrita** que permite entrar dentro do container e escrever. *atenção que não é dentro da imagem é dentro do container. quando o container é destruído todas as alterações feitas dentro do container são apagadas*
 
 <br>
-
+ 
 ---
 
 ## **docker**
